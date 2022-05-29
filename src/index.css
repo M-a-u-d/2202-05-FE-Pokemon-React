@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Poppins:wght@200;300;700&display=swap');
+
+body {
+    margin: 0;
+    width: 1200px;
+    font-family: 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    display: flex;
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+}
+
+h1, h4 {
+    font-family: 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #BC4C2A;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+img {
+    width: 100%;
+}

@@ -1,0 +1,23 @@
+section {
+    background-color: #F6F3EF;
+    font-size: 10px;
+    height: 300px;
+    overflow: hidden;
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border: 1px solid #BC4C2A;
+    padding: 8px 16px;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+section p {
+    max-width: 200px;
+    font-size: 18px;
+}

@@ -1,0 +1,83 @@
+main {
+    margin: 0px 1px;
+    display: flex;
+
+}
+body {
+    margin: 0;
+    width: 1200px;
+    font-family: 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    display: flex;
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+}
+
+h1, h4 {
+    font-family: 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #BC4C2A;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav {
+    margin: 2px 0;
+}
+div{
+    background-color: orange;
+    width:800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+tile {
+    width:800px;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+img {
+    width: 100%;
+}
+
+/*article {*/
+/*    width: 450px;*/
+/*    position: relative;*/
+/*    text-align: center;*/
+/*    margin: 16px;*/
+/*}*/
+
+/*article span {*/
+/*    background-color: #BC4C2A;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    color: white;*/
+/*    font-size: 8px;*/
+/*    padding: 4px;*/
+/*}*/
+
+/*article p {*/
+/*    font-size: 25px;*/
+/*}*/
+
+

@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import axios from "axios";
-import PokemonCard from "./components/PokemonCard"
+import PokemonCard from "./components/pokemoncard/PokemonCard"
 import pokemonlogo from './assets/pokemonlogo.png';
-import Header from "./components/Header"
-import Button from "./components/Button"
+import Header from "./components/header/Header"
+import Button from "./components/button/Button"
 
 function App() {
 
-    const [error, setError ] = useState('');
+    const [ error, setError ] = useState('');
     const [ pokemon, setPokemon ] = useState ( [])
     const [ endpoint, setEndpoint ] = useState(`https://pokeapi.co/api/v2/pokemon`)
+    const [loading, setLoading] = useState(true);
 
     useEffect (() => {
         async function getPokemonData() {
+            setLoading(true);
             try {
                 const result = await axios.get(`${endpoint}`);
                 console.log(result.data.next)
@@ -21,13 +23,15 @@ function App() {
 
             } catch (e) {
                 console.error(e);
-                setError (e.message ||"jammer hoor er gaat iets mis");
+                setError (e.message ||"jammer hoor, er gaat iets mis");
 
             }
+            setLoading(false);
         }
         getPokemonData()
 
     }, [endpoint])
+    if (loading) return `loading...`
 
  return (
 
@@ -43,7 +47,7 @@ function App() {
         <nav>
           <Button
                 clickHandler={() => setEndpoint(pokemon.previous)}>
-              <h4> vorige</h4>
+                vorige
             </Button>
 
 

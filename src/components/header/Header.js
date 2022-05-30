@@ -1,4 +1,5 @@
 import React from "react"
+import "./Header.css"
 
 function header({ image, title, description}) {
     return (

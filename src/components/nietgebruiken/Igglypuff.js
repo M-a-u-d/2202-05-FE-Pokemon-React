@@ -3,8 +3,6 @@ import './App.css';
 import axios from 'axios';
 
 
-
-
 function Igglypuff() {
     const [error, setError] = useState('');
 
